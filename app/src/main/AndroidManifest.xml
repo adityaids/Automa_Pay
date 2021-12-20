@@ -10,7 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutomaPay">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.history.DetailExpenditureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.history.AddExpenditureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.utility.UtilityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splitbill.ScanBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.history.ExpenditureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.intro.IntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
