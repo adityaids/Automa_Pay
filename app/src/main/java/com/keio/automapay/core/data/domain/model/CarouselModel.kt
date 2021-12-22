@@ -1,7 +1,7 @@
 package com.keio.automapay.core.data.domain.model
 
-data class UtilityBillsModel(
-    val id: Int,
+data class CarouselModel(
+    val image: String,
     val title: String,
-    val cost: String
+    val subtitle: String
 )

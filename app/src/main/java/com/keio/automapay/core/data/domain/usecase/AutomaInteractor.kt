@@ -1,4 +1,6 @@
 package com.keio.automapay.core.data.domain.usecase
 
-class AutomaInteractor {
+import com.keio.automapay.core.data.domain.repository.IAutomaRepository
+
+class AutomaInteractor(automaRepository: IAutomaRepository): AutomaUsecase {
 }
