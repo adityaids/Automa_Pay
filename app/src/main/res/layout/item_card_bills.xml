@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_292sdp"
+    android:layout_height="@dimen/_130sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/_18sdp"
+    android:background="@drawable/bills_tag">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/_14ssp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        tools:text="here the title"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:textColor="@color/secondary_text"
+        android:textAlignment="center"
+        tools:text="17/08/1945"/>
+
+    <TextView
+        android:id="@+id/tv_bills"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:gravity="center"
+        android:rotation="-90"
+        tools:text="Bills No"/>
+
+    <TextView
+        android:id="@+id/tv_Bills_no"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_4sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:gravity="center"
+        android:rotation="-90"
+        tools:text="0938402983409"/>
+
+    <ImageView
+        android:layout_width="@dimen/_77sdp"
+        android:layout_height="@dimen/_77sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/_63sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        tools:background="@drawable/electiricity"/>
+
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_slab"
+        android:textSize="@dimen/_24ssp"
+        android:maxEms="4"
+        tools:text="&#165; 60k"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
