@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,23 +9,25 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_carousel"
-        android:layout_width="@dimen/_200sdp"
-        android:layout_height="@dimen/_200sdp"
+        android:layout_width="@dimen/_248sdp"
+        android:layout_height="@dimen/_248sdp"
         android:layout_marginTop="@dimen/_80sdp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:civ_circle_background_color="@color/primary_dark"/>
 
     <TextView
         android:id="@+id/tv_title_carousel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_carousel"
         android:textColor="@color/white"
-        android:textSize="@dimen/_36ssp"
+        android:textSize="@dimen/_22ssp"
         android:fontFamily="@font/roboto_slab_bold"
         android:textAlignment="center"
         tools:text="Paying Bills"/>
@@ -37,9 +40,9 @@
         app:layout_constraintTop_toBottomOf="@id/tv_title_carousel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="@dimen/_18ssp"
+        android:textSize="@dimen/_14ssp"
         android:textColor="@color/white"
-        android:fontFamily="@font/roboto_slab"
+        android:fontFamily="@font/roboto_slab_medium"
         android:textAlignment="center"
         tools:text="@tools:sample/lorem"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

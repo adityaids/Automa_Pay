@@ -6,7 +6,7 @@ import com.keio.automapay.core.data.domain.model.UtilityBillsModel
 
 object DummyData {
 
-    fun getDummyUtilityBills(): List<UtilityBillsModel>{
+    /*fun getDummyUtilityBills(): List<UtilityBillsModel>{
         val listUtility = ArrayList<UtilityBillsModel>()
         val data1 = UtilityBillsModel()
         listUtility.add(data1)
@@ -26,7 +26,7 @@ object DummyData {
         }
     }
 
-    fun initExpenditure(): List<ExpenditureModel>{
+    fun getDummyExpenditure(): List<ExpenditureModel>{
         val listExpenditure = ArrayList<ExpenditureModel>()
         val data1 = ExpenditureModel()
         listExpenditure.add(data1)
@@ -35,5 +35,5 @@ object DummyData {
         val data3 = ExpenditureModel()
         listExpenditure.add(data3)
         return listExpenditure
-    }
+    }*/
 }

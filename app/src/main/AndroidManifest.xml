@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/fullscreen">
         <activity
+            android:name=".ui.utility.DetailUtilityActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.resultpayment.PaymentResultActivity"
             android:exported="false" />
         <activity
