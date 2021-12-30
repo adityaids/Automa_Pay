@@ -10,7 +10,6 @@
     <string name="bills">Bills</string>
     <string name="history">History</string>
     <string name="promotion">Promotion</string>
-    <string name="history">History</string>
     <string name="your_expenditure_for_this_month">Your Expenditure for this month</string>
     <string name="your_total_expenditure">Your Total Expenditure:</string>
     <string name="total_expenditure_for_this_month">Total Expenditure For This Month</string>
@@ -20,4 +19,6 @@
     <string name="date">Date</string>
     <string name="category">Category</string>
     <string name="cost">Cost</string>
+    <string name="scan_error">We can\'t find the bills, please scan again</string>
+    <string name="scan_success">QR Code Scanned</string>
 </resources>

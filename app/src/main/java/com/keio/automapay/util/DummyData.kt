@@ -18,7 +18,7 @@ object DummyData {
     }
 
     fun getDummySplitBills(codeBills: String): SplitBillModel?{
-        val code = ""
+        val code = "automapay12122021"
         return if (codeBills == code) {
             SplitBillModel()
         } else {

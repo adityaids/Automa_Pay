@@ -73,24 +73,22 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edt_layout2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginStart="@dimen/_14sdp"
                 android:layout_marginEnd="@dimen/_14sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/edt_layout1">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edt_no_rekening"
+                app:layout_constraintTop_toBottomOf="@id/edt_layout1"
+                android:hint="@string/category">
+                <AutoCompleteTextView
+                    android:id="@+id/menu_category"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/category"
-                    android:inputType="text"
-                    android:maxLength="10"
-                    android:maxLines="1"/>
+                    android:inputType="none"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
