@@ -9,8 +9,8 @@
     android:background="@color/primary">
     
     <androidx.cardview.widget.CardView
-        android:layout_width="@dimen/_240sdp"
-        android:layout_height="@dimen/_240sdp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,8 +24,8 @@
             
             <ImageView
                 android:id="@+id/img_logo"
-                android:layout_width="@dimen/_220sdp"
-                android:layout_height="@dimen/_220sdp"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_180sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

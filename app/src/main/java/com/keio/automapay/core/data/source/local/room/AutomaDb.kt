@@ -4,7 +4,7 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.keio.automapay.core.data.source.local.entity.ExpenditureEntity
 
-@Database(entities = [ExpenditureEntity::class], version = 1)
+@Database(entities = [ExpenditureEntity::class], version = 1, exportSchema = false)
 abstract class AutomaDb: RoomDatabase() {
     abstract fun automaDao(): AutomaDao
 }

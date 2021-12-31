@@ -21,4 +21,10 @@
     <string name="cost">Cost</string>
     <string name="scan_error">We can\'t find the bills, please scan again</string>
     <string name="scan_success">QR Code Scanned</string>
+    <string name="subtitle1">Checking and paying your utility bills become much easier with this app, you can check and pay it anywhere and anytime.</string>
+    <string name="subtitle2">Tracking your expenditure is not hard anymore, you can see your expenditure with ease and automatically organized</string>
+    <string name="subtitle3">Pay with only one click, it’s automatically detect how much people is connected to the bills and split it evenly.</string>
+    <string name="title1">Paying Bills</string>
+    <string name="title2">Spending History</string>
+    <string name="title3">Splitting Bills</string>
 </resources>

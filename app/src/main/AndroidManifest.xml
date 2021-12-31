@@ -9,42 +9,81 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/fullscreen">
-        <activity
-            android:name=".ui.utility.DetailUtilityActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.resultpayment.PaymentResultActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.history.DetailExpenditureActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.history.AddExpenditureActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.utility.UtilityActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.splitbill.ScanBillActivity"
-            android:exported="false" />
+
         <activity
             android:name=".ui.splash.SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.history.ExpenditureActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.intro.IntroActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.main.MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.utility.DetailUtilityActivity"
+            android:exported="false"
+            android:theme="@style/fullscreen"
+            android:parentActivityName=".ui.utility.UtilityActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.utility.UtilityActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.resultpayment.PaymentResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.history.DetailExpenditureActivity"
+            android:exported="false"
+            android:theme="@style/fullscreen"
+            android:parentActivityName=".ui.history.ExpenditureActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.history.ExpenditureActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.history.AddExpenditureActivity"
+            android:exported="false"
+            android:theme="@style/fullscreen"
+            android:parentActivityName=".ui.history.ExpenditureActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.history.ExpenditureActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.utility.UtilityActivity"
+            android:exported="false"
+            android:theme="@style/fullscreen"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.splitbill.ScanBillActivity"
+            android:exported="false"
+            android:theme="@style/fullscreen"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.history.ExpenditureActivity"
+            android:exported="false"
+            android:theme="@style/fullscreen"
+            android:parentActivityName=".ui.main.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.intro.IntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@
     tools:context=".ui.intro.IntroActivity">
 
     <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/slider"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_480sdp"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,13 +26,13 @@
         app:sliderIndicatorRadius="2dp"
         app:sliderIndicatorSelectedColor="#5A5A5A"
         app:sliderIndicatorUnselectedColor="#FFF"
-        app:sliderScrollTimeInSec="1"
+        app:sliderScrollTimeInSec="5"
         app:sliderStartAutoCycle="true"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_next"
-        android:layout_width="@dimen/_93sdp"
-        android:layout_height="@dimen/_28sdp"
+        android:layout_width="@dimen/_66sdp"
+        android:layout_height="@dimen/_25sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="@dimen/_24sdp"
