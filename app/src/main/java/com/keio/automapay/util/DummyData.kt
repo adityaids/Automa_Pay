@@ -76,12 +76,6 @@ object DummyData {
 
     fun getDummyExpenditure(): List<ExpenditureModel>{
         val listExpenditure = ArrayList<ExpenditureModel>()
-        /*val id: Int,
-        val name: String,
-        val category: String,
-        val place: String,
-        val cost: String,
-        val date: String*/
         val data1 = ExpenditureModel(
             id = 1,
             name = "Vuitton Jacket",
@@ -143,5 +137,35 @@ object DummyData {
         )
         listCarousel.add(data3)
         return listCarousel
+    }
+
+    fun getBanner(context: Context): List<BannerModel>{
+        val listBanner = ArrayList<BannerModel>()
+        val bannerModel1 = BannerModel(
+            1,
+            context.resources.getDrawable(R.drawable.promotion1)
+        )
+        listBanner.add(bannerModel1)
+        val bannerModel2 = BannerModel(
+            2,
+            context.resources.getDrawable(R.drawable.promotion2)
+        )
+        listBanner.add(bannerModel2)
+        val bannerModel3 = BannerModel(
+            3,
+            context.resources.getDrawable(R.drawable.promotion3)
+        )
+        listBanner.add(bannerModel3)
+        val bannerModel4 = BannerModel(
+            4,
+            context.resources.getDrawable(R.drawable.promotion4)
+        )
+        listBanner.add(bannerModel4)
+        val bannerModel5 = BannerModel(
+            5,
+            context.resources.getDrawable(R.drawable.promotion5)
+        )
+        listBanner.add(bannerModel5)
+        return listBanner
     }
 }

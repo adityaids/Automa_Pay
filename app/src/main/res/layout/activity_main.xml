@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,149 +8,149 @@
     android:background="@color/primary"
     tools:context=".ui.main.MainActivity">
 
-    <include
-        android:id="@+id/dashboard"
-        layout="@layout/dashboard_layout"
-        android:layout_width="@dimen/_290sdp"
-        android:layout_height="@dimen/_166sdp"
-        android:layout_marginTop="@dimen/_12sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_16sdp"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/menu"
-        android:textColor="@color/secondary_text"
-        android:textSize="@dimen/_13ssp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dashboard" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_scan"
-        android:layout_width="@dimen/_50sdp"
-        android:layout_height="@dimen/_50sdp"
-        android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_4sdp"
-        android:backgroundTint="@color/primary_dark"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        android:padding="0dp"
-        android:text="@string/scan"
-        android:textAllCaps="false"
-        android:textSize="@dimen/_8ssp"
-        app:icon="@drawable/outline_qr_code_scanner_24"
-        app:iconGravity="textTop"
-        app:iconPadding="@dimen/_6sdp"
-        app:iconSize="@dimen/_20sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_menu" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_payment"
-        android:layout_width="@dimen/_50sdp"
-        android:layout_height="@dimen/_50sdp"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_4sdp"
-        android:backgroundTint="@color/primary_dark"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        android:padding="0dp"
-        android:text="@string/payment"
-        android:textAllCaps="false"
-        android:textSize="@dimen/_8ssp"
-        app:icon="@drawable/outline_payments_24"
-        app:iconGravity="textTop"
-        app:iconPadding="@dimen/_6sdp"
-        app:iconSize="@dimen/_20sdp"
-        app:layout_constraintEnd_toStartOf="@id/btn_bills"
-        app:layout_constraintStart_toEndOf="@id/btn_scan"
-        app:layout_constraintTop_toBottomOf="@id/tv_menu" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_bills"
-        android:layout_width="@dimen/_50sdp"
-        android:layout_height="@dimen/_50sdp"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_4sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:backgroundTint="@color/primary_dark"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        android:padding="0dp"
-        android:text="@string/bills"
-        android:textAllCaps="false"
-        android:textSize="@dimen/_8ssp"
-        app:icon="@drawable/outline_receipt_24"
-        app:iconGravity="textTop"
-        app:iconPadding="@dimen/_6sdp"
-        app:iconSize="@dimen/_20sdp"
-        app:layout_constraintEnd_toStartOf="@id/btn_history"
-        app:layout_constraintStart_toEndOf="@id/btn_payment"
-        app:layout_constraintTop_toBottomOf="@id/tv_menu" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_history"
-        android:layout_width="@dimen/_50sdp"
-        android:layout_height="@dimen/_50sdp"
-        android:layout_marginTop="@dimen/_4sdp"
-        android:layout_marginEnd="@dimen/_16sdp"
-        android:backgroundTint="@color/primary_dark"
-        android:insetLeft="0dp"
-        android:insetTop="0dp"
-        android:insetRight="0dp"
-        android:insetBottom="0dp"
-        android:padding="0dp"
-        android:text="@string/history"
-        android:textAllCaps="false"
-        android:textSize="@dimen/_8ssp"
-        app:icon="@drawable/ic_history_24"
-        app:iconGravity="textTop"
-        app:iconPadding="@dimen/_6sdp"
-        app:iconSize="@dimen/_20sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_menu" />
-
-    <TextView
-        android:id="@+id/tv_promotion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_16sdp"
-        android:fontFamily="@font/roboto_slab"
-        android:text="@string/promotion"
-        android:textColor="@color/secondary_text"
-        android:textSize="@dimen/_13ssp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_scan" />
-
-    <androidx.recyclerview.widget.RecyclerView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:layout_marginEnd="@dimen/_16sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_promotion" />
+        android:layout_height="wrap_content">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <include
+            android:id="@+id/dashboard"
+            layout="@layout/main_dashboard"
+            android:layout_width="@dimen/_293sdp"
+            android:layout_height="@dimen/_185sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="@string/menu"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dashboard" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_scan"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:backgroundTint="@color/primary_dark"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:text="@string/scan"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_8ssp"
+            app:icon="@drawable/outline_qr_code_scanner_24"
+            app:iconGravity="textTop"
+            app:iconPadding="@dimen/_6sdp"
+            app:iconSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_menu" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_payment"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:backgroundTint="@color/primary_dark"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:text="@string/payment"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_8ssp"
+            app:icon="@drawable/outline_payments_24"
+            app:iconGravity="textTop"
+            app:iconPadding="@dimen/_6sdp"
+            app:iconSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toStartOf="@id/btn_bills"
+            app:layout_constraintStart_toEndOf="@id/btn_scan"
+            app:layout_constraintTop_toBottomOf="@id/tv_menu" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_bills"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:backgroundTint="@color/primary_dark"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:text="@string/bills"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_8ssp"
+            app:icon="@drawable/outline_receipt_24"
+            app:iconGravity="textTop"
+            app:iconPadding="@dimen/_6sdp"
+            app:iconSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toStartOf="@id/btn_history"
+            app:layout_constraintStart_toEndOf="@id/btn_payment"
+            app:layout_constraintTop_toBottomOf="@id/tv_menu" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_history"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:backgroundTint="@color/primary_dark"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:text="@string/history"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_8ssp"
+            app:icon="@drawable/ic_history_24"
+            app:iconGravity="textTop"
+            app:iconPadding="@dimen/_6sdp"
+            app:iconSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_menu" />
+
+        <TextView
+            android:id="@+id/tv_promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="@string/promotion"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_scan" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_promotion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_promotion"
+            tools:listitem="@layout/item_banner"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
