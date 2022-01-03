@@ -12,9 +12,11 @@ import com.keio.automapay.ui.history.ExpenditureActivity
 import com.keio.automapay.ui.splitbill.ScanBillActivity
 import com.keio.automapay.ui.utility.UtilityActivity
 import com.keio.automapay.util.DummyData
+import org.koin.android.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
+    private val mainViewModel: MainViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +31,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
         val listBanner = DummyData.getBanner(this)
         bannerAdaper.setData(listBanner)
+
+        mainViewModel.insertAllExpenditure()
 
         binding.btnBills.setOnClickListener(this)
         binding.btnHistory.setOnClickListener(this)

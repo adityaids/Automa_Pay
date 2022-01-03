@@ -10,6 +10,7 @@ import com.keio.automapay.core.data.source.local.room.AutomaDb
 import com.keio.automapay.ui.history.ExpenditureViewModel
 import com.keio.automapay.ui.main.MainViewModel
 import com.keio.automapay.ui.splitbill.SplitBillViewModel
+import com.keio.automapay.ui.utility.UtilityViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -21,6 +22,7 @@ val viewModelModule = module {
     viewModel { MainViewModel(get()) }
     viewModel { ExpenditureViewModel(get()) }
     viewModel { SplitBillViewModel(get()) }
+    viewModel { UtilityViewModel(get())}
 }
 
 val databaseModul = module {

@@ -11,19 +11,25 @@ object DummyData {
         val data1 = UtilityBillsModel(
             id = 0,
             title = "Electricity",
-            cost = "30000"
+            date = "02/02/2022",
+            cost = "30000",
+            image = R.drawable.electiricity
         )
         listUtility.add(data1)
         val data2 = UtilityBillsModel(
             id = 1,
             title = "Water",
-            cost = "13000"
+            date = "02/02/2022",
+            cost = "13000",
+            image = R.drawable.water
         )
         listUtility.add(data2)
         val data3 = UtilityBillsModel(
             id = 3,
             title = "Gas",
-            cost = "16000"
+            date = "02/02/2022",
+            cost = "16000",
+            image = R.drawable.gas
         )
         listUtility.add(data3)
         return listUtility

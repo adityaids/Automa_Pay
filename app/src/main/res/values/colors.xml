@@ -19,4 +19,9 @@
     <color name="bg_light">#E4DBDB</color>
     <color name="secondary_text">#C1C1C1</color>
     <color name="divider">#A1212121</color>
+
+    <color name="fashion_tag_color">#8087E2</color>
+    <color name="food_tag_color">#E06681</color>
+    <color name="vacation_tag_color">#88B4E7</color>
+    <color name="entertainment_tag_color">#EBA669</color>
 </resources>

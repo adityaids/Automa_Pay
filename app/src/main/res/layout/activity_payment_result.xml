@@ -50,12 +50,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/_172sdp"
+                android:layout_height="@dimen/_152sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="fitXY"
+                tools:src="@drawable/payment_success"/>
+
             <TextView
                 android:id="@+id/tv_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_18sdp"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@id/iv_logo"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:textSize="@dimen/_18ssp"
@@ -84,7 +95,7 @@
                 android:id="@+id/divider1"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_3sdp"
-                android:layout_marginTop="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:layout_marginStart="@dimen/_14sdp"
                 android:layout_marginEnd="@dimen/_14sdp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -92,27 +103,72 @@
                 app:layout_constraintTop_toBottomOf="@id/tv_date"
                 android:background="@color/divider"/>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_item"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_180sdp"
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider1"
+                android:text="@string/title"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/roboto_slab_medium"
+                android:maxEms="8"/>
+
+            <TextView
+                android:id="@+id/tv_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_6sdp"
                 android:layout_marginStart="@dimen/_14sdp"
-                android:layout_marginEnd="@dimen/_14sdp"
-                app:layout_constraintTop_toBottomOf="@id/divider1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintTop_toBottomOf="@id/tv_name"
+                android:text="@string/cost"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/roboto_slab_medium"
+                android:maxEms="8"/>
+
+            <TextView
+                android:id="@+id/tv_name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/roboto_slab_medium"
+                android:maxEms="8"
+                tools:text="sapporo beef"/>
+
+            <TextView
+                android:id="@+id/tv_cost_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/roboto_slab_medium"
+                android:maxEms="8"
+                tools:text="100000"/>
 
             <View
                 android:id="@+id/divider2"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_3sdp"
-                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginStart="@dimen/_14sdp"
                 android:layout_marginEnd="@dimen/_14sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rv_item"
+                app:layout_constraintTop_toBottomOf="@id/tv_cost"
                 android:background="@color/divider"/>
 
             <TextView

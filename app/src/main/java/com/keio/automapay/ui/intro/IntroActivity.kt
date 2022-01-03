@@ -32,6 +32,7 @@ class IntroActivity : AppCompatActivity() {
         binding.btnNext.setOnClickListener {
             val intent = Intent(this@IntroActivity, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

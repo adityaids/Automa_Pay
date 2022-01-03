@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
             tools:src="@drawable/promotion2"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

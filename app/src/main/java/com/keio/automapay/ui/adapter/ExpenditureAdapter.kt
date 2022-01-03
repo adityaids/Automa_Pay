@@ -2,6 +2,7 @@ package com.keio.automapay.ui.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.keio.automapay.core.data.domain.model.ExpenditureModel
 import com.keio.automapay.core.data.domain.model.UtilityBillsModel
 import com.keio.automapay.databinding.ItemCardBillsBinding
 
@@ -22,7 +23,7 @@ class ExpenditureAdapter: RecyclerView.Adapter<ExpenditureAdapter.ExpenditureVie
     inner class ExpenditureViewHolder(
         private val binding: ItemCardBillsBinding
         ): RecyclerView.ViewHolder(binding.root) {
-            fun bind(data: UtilityBillsModel){
+            fun bind(data: ExpenditureModel){
 
             }
     }

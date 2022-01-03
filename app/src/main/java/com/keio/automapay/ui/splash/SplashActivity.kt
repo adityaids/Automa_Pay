@@ -20,5 +20,6 @@ class SplashActivity : AppCompatActivity() {
     private fun toIntro(){
         val intent = Intent(this@SplashActivity, IntroActivity::class.java)
         startActivity(intent)
+        finish()
     }
 }

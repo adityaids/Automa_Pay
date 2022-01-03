@@ -30,4 +30,5 @@
     <string name="hi_harits">Hi Harits !</string>
     <string name="welcome_back">Welcome Back</string>
     <string name="your_expenditure_for_this_month_is">Your Expenditure for this month is</string>
+    <string name="bills_no">Bills No</string>
 </resources>
