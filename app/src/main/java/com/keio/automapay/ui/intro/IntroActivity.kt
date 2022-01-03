@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatDelegate
 import com.keio.automapay.R
 import com.keio.automapay.databinding.ActivityIntroBinding
 import com.keio.automapay.ui.adapter.IntroSliderAdapter
@@ -19,6 +20,8 @@ class IntroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityIntroBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         val mAdapter = IntroSliderAdapter()
         binding.slider.setSliderAdapter(mAdapter)
