@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.keio.automapay.R
 
-class PaymentResultExpendActivity : AppCompatActivity() {
+class PaymentResultSplitActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_payment_result_expend)
+        setContentView(R.layout.activity_payment_result_split)
     }
 }

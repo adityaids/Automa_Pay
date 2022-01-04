@@ -31,4 +31,9 @@
     <string name="welcome_back">Welcome Back</string>
     <string name="your_expenditure_for_this_month_is">Your Expenditure for this month is</string>
     <string name="bills_no">Bills No</string>
+    <string name="total">Total</string>
+    <string name="customer_id">Enter your customer id</string>
+    <string name="input_number">Enter payment</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
 </resources>

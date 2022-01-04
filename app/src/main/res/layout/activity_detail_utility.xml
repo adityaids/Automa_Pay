@@ -83,7 +83,7 @@
             <View
                 android:id="@+id/divider1"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_3sdp"
+                android:layout_height="@dimen/_2sdp"
                 android:layout_marginTop="@dimen/_32sdp"
                 android:layout_marginStart="@dimen/_14sdp"
                 android:layout_marginEnd="@dimen/_14sdp"
@@ -147,7 +147,7 @@
             <View
                 android:id="@+id/divider2"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_3sdp"
+                android:layout_height="@dimen/_2sdp"
                 android:layout_marginTop="@dimen/_137sdp"
                 android:layout_marginStart="@dimen/_14sdp"
                 android:layout_marginEnd="@dimen/_14sdp"
@@ -208,4 +208,15 @@
         android:insetRight="0dp"
         android:insetBottom="0dp"
         app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.Button.Circle"/>
+
+    <ProgressBar
+        android:id="@+id/pgs_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_240sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

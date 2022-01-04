@@ -34,20 +34,20 @@ class PaymentResultActivity : AppCompatActivity() {
             Glide.with(this)
                 .load(R.drawable.payment_success)
                 .into(binding.ivLogo)
-            val formater = DecimalFormat("###.###")
             binding.tvNameValue.text = data.title
             binding.tvTitle.text = "Payment Success"
             binding.tvDate.text = data.date
-            binding.tvCostValue.text = "${resources.getString(R.string.yen)} ${formater.format(data.cost)}"
+            binding.tvCostValue.text = "${resources.getString(R.string.yen)} ${data.cost}"
+            binding.tvTotal.text = "${resources.getString(R.string.yen)} ${data.cost}"
         } else {
             Glide.with(this)
                 .load(R.drawable.payment_failed)
                 .into(binding.ivLogo)
-            val formater = DecimalFormat("###.###")
             binding.tvNameValue.text = data.title
             binding.tvTitle.text = "Payment Failed"
             binding.tvDate.text = data.date
-            binding.tvCostValue.text = "${resources.getString(R.string.yen)} ${formater.format(data.cost)}"
+            binding.tvCostValue.text = "${resources.getString(R.string.yen)} ${data.cost}"
+            binding.tvTotal.text = "${resources.getString(R.string.yen)} ${data.cost}"
         }
     }
 }

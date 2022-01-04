@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/fullscreen">
         <activity
-            android:name=".ui.resultpayment.PaymentResultExpendActivity"
+            android:name=".ui.resultpayment.PaymentResultSplitActivity"
             android:exported="false" />
         <activity
             android:name=".ui.splash.SplashActivity"

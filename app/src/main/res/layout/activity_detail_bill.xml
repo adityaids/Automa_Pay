@@ -83,7 +83,7 @@
             <View
                 android:id="@+id/divider1"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_3sdp"
+                android:layout_height="@dimen/_2sdp"
                 android:layout_marginTop="@dimen/_32sdp"
                 android:layout_marginStart="@dimen/_14sdp"
                 android:layout_marginEnd="@dimen/_14sdp"
@@ -106,7 +106,7 @@
             <View
                 android:id="@+id/divider2"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_3sdp"
+                android:layout_height="@dimen/_2sdp"
                 android:layout_marginTop="@dimen/_6sdp"
                 android:layout_marginStart="@dimen/_14sdp"
                 android:layout_marginEnd="@dimen/_14sdp"

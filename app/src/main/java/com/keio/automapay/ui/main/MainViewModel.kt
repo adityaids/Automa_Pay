@@ -1,7 +1,6 @@
 package com.keio.automapay.ui.main
 
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import com.keio.automapay.core.data.domain.model.ExpenditureModel
 import com.keio.automapay.core.data.domain.model.UtilityBillsModel
 import com.keio.automapay.core.data.domain.usecase.AutomaUsecase
@@ -17,4 +16,5 @@ class MainViewModel(private val automaUsecase: AutomaUsecase): ViewModel() {
             automaUsecase.insertExpenditure(data)
         }
     }
+    val listExpenditure = automaUsecase.getAllExpenditure().asLiveData()
 }
