@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val bannerAdaper = BannerAdapter()
         binding.rvPromotion.apply {
-            layoutManager = LinearLayoutManager(context)
+            layoutManager = LinearLayoutManager(context, LinearLayout.HORIZONTAL, false)
             adapter = bannerAdaper
             setHasFixedSize(true)
         }
@@ -73,12 +73,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btn_history -> {
                 toExpenditure()
+                binding.pgsBar.visibility = View.VISIBLE
             }
             R.id.btn_payment -> {
                 toScan()
+                binding.pgsBar.visibility = View.VISIBLE
             }
             R.id.btn_scan -> {
                 toScan()
+                binding.pgsBar.visibility = View.VISIBLE
             }
         }
     }

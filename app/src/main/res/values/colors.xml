@@ -24,4 +24,5 @@
     <color name="food_tag_color">#E06681</color>
     <color name="vacation_tag_color">#88B4E7</color>
     <color name="entertainment_tag_color">#EBA669</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>

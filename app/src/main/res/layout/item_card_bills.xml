@@ -21,7 +21,10 @@
         android:fontFamily="@font/roboto_slab_bold"
         android:textColor="@color/black"
         android:textAlignment="center"
-        tools:text="Electricity"/>
+        android:maxLength="24"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="Watch Spider-man No Way Home"/>
 
     <TextView
         android:id="@+id/tv_date"

@@ -1,8 +1,5 @@
 package com.keio.automapay.util
 
-import android.graphics.Color
-import android.graphics.ColorSpace
-import com.github.aachartmodel.aainfographics.aatools.AARgba
 import com.keio.automapay.R
 
 enum class CategoryColor(color: Int) {

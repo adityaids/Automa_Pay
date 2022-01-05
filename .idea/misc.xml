@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/drawable/ic_baseline_add.xml" value="0.22777777777777777" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/drawable/outline_arrow_back_24.xml" value="0.23148148148148148" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/drawable/outline_arrow_forward_24.xml" value="0.23148148148148148" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/drawable/outline_date_range_24.xml" value="0.23148148148148148" />
@@ -13,11 +14,12 @@
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_detail_bill.xml" value="0.14" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_detail_expenditure.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_detail_utility.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_expenditure.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_expenditure.xml" value="0.2" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_intro.xml" value="0.18" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_main.xml" value="0.15" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_payment_result.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_payment_result_expend.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_payment_result_split.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_splash.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_split_bill.xml" value="0.16" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/AutomaPay/app/src/main/res/layout/activity_utility.xml" value="0.22447916666666667" />

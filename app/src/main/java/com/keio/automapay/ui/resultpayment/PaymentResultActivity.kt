@@ -1,11 +1,13 @@
 package com.keio.automapay.ui.resultpayment
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
 import com.keio.automapay.R
 import com.keio.automapay.core.data.domain.model.UtilityBillsModel
 import com.keio.automapay.databinding.ActivityPaymentResultBinding
+import com.keio.automapay.ui.main.MainActivity
 import java.text.DecimalFormat
 
 class PaymentResultActivity : AppCompatActivity() {
@@ -25,8 +27,19 @@ class PaymentResultActivity : AppCompatActivity() {
         initView(status, data)
 
         binding.btnBack.setOnClickListener {
-            finish()
+            toMain()
         }
+    }
+
+    private fun toMain() {
+        val intent = Intent(this@PaymentResultActivity, MainActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(intent)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        toMain()
     }
 
     private fun initView(status: Boolean, data: UtilityBillsModel){

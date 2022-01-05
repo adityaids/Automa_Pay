@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/card_wave"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_back"
         android:layout_width="@dimen/_32sdp"
         android:layout_height="@dimen/_32sdp"
