@@ -32,11 +32,11 @@ class BannerAdapter: RecyclerView.Adapter<BannerAdapter.BannerViewHolder>() {
 
     inner class BannerViewHolder(
         private val binding: ItemBannerBinding
-        ): RecyclerView.ViewHolder(binding.root) {
-            fun bind(data: BannerModel){
-                Glide.with(itemView.context)
-                    .load(data.image)
-                    .into(binding.ivBanner)
-            }
+    ): RecyclerView.ViewHolder(binding.root) {
+        fun bind(data: BannerModel){
+            Glide.with(itemView.context)
+                .load(data.image)
+                .into(binding.ivBanner)
+        }
     }
 }

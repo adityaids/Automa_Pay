@@ -36,37 +36,37 @@ class ExpenditureAdapter: RecyclerView.Adapter<ExpenditureAdapter.ExpenditureVie
 
     inner class ExpenditureViewHolder(
         private val binding: ItemCardBillsBinding
-        ): RecyclerView.ViewHolder(binding.root) {
-            fun bind(data: ExpenditureModel){
-                val cost = Integer.parseInt(data.cost) / 1000
-                binding.tvBillsNo.text = data.id.toString()
-                binding.tvTitle.text = data.name
-                binding.tvDate.text = data.date
-                binding.tvCost.text = "${itemView.context.resources.getString(R.string.yen)} $cost"+"K"
+    ): RecyclerView.ViewHolder(binding.root) {
+        fun bind(data: ExpenditureModel){
+            val cost = Integer.parseInt(data.cost) / 1000
+            binding.tvBillsNo.text = data.id.toString()
+            binding.tvTitle.text = data.name
+            binding.tvDate.text = data.date
+            binding.tvCost.text = "${itemView.context.resources.getString(R.string.yen)} $cost"+"K"
 
-                when(data.category){
-                    "Fashion" -> {
-                        Glide.with(itemView.context)
-                            .load(R.drawable.fashion)
-                            .into(binding.ivType)
-                    }
-                    "Food" -> {
-                        Glide.with(itemView.context)
-                            .load(R.drawable.food)
-                            .into(binding.ivType)
-                    }
-                    "Vacation" -> {
-                        Glide.with(itemView.context)
-                            .load(R.drawable.vacations)
-                            .into(binding.ivType)
-                    }
-                    "Entertainment" -> {
-                        Glide.with(itemView.context)
-                            .load(R.drawable.entertainment)
-                            .into(binding.ivType)
-                    }
+            when(data.category){
+                "Fashion" -> {
+                    Glide.with(itemView.context)
+                        .load(R.drawable.fashion)
+                        .into(binding.ivType)
+                }
+                "Food" -> {
+                    Glide.with(itemView.context)
+                        .load(R.drawable.food)
+                        .into(binding.ivType)
+                }
+                "Vacation" -> {
+                    Glide.with(itemView.context)
+                        .load(R.drawable.vacations)
+                        .into(binding.ivType)
+                }
+                "Entertainment" -> {
+                    Glide.with(itemView.context)
+                        .load(R.drawable.entertainment)
+                        .into(binding.ivType)
                 }
             }
+        }
 
         init {
             binding.root.setOnClickListener {

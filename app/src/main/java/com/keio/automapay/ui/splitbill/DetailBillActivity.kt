@@ -35,6 +35,7 @@ class DetailBillActivity : AppCompatActivity() {
             binding.tvTitle.text = dataBills.title
             binding.tvDate.text = dataBills.date
             total = getTotalCost(dataBills.listOrder)
+            binding.tvPersonValue.text = dataBills.manyPerson.toString()
             binding.tvTotal.text = total.toString()
             binding.tvTotalPerPerson.text = getCostPerPerson(total, dataBills.manyPerson).toString()
         }

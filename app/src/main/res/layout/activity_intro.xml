@@ -26,7 +26,7 @@
         app:sliderIndicatorRadius="2dp"
         app:sliderIndicatorSelectedColor="#5A5A5A"
         app:sliderIndicatorUnselectedColor="#FFF"
-        app:sliderScrollTimeInSec="5"
+        app:sliderScrollTimeInSec="3"
         app:sliderStartAutoCycle="true"/>
 
     <com.google.android.material.button.MaterialButton

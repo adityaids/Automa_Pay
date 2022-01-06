@@ -104,7 +104,7 @@
                 android:fontFamily="@font/roboto_slab_medium"
                 android:maxEms="8"
                 android:textColor="@color/secondary_text"
-                tools:text="person"/>
+                android:text="@string/person"/>
 
             <TextView
                 android:id="@+id/tv_person_value"
@@ -123,7 +123,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_item"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_160sdp"
+                android:layout_height="@dimen/_150sdp"
                 android:layout_marginTop="@dimen/_6sdp"
                 android:layout_marginStart="@dimen/_14sdp"
                 android:layout_marginEnd="@dimen/_14sdp"

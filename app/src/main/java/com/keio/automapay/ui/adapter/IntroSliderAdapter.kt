@@ -29,13 +29,13 @@ class IntroSliderAdapter: SliderViewAdapter<IntroSliderAdapter.SliderViewHolder>
 
     inner class SliderViewHolder(
         private val binding: ItemCarouselBinding
-        ): SliderViewAdapter.ViewHolder(binding.root) {
-            fun bind(data: CarouselModel){
-                Glide.with(itemView.context)
-                    .load(data.image)
-                    .into(binding.ivCarousel)
-                binding.tvTitleCarousel.text = data.title
-                binding.tvCaptionCarousel.text = data.subtitle
-            }
+    ): SliderViewAdapter.ViewHolder(binding.root) {
+        fun bind(data: CarouselModel){
+            Glide.with(itemView.context)
+                .load(data.image)
+                .into(binding.ivCarousel)
+            binding.tvTitleCarousel.text = data.title
+            binding.tvCaptionCarousel.text = data.subtitle
+        }
     }
 }
