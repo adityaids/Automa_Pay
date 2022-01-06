@@ -92,27 +92,95 @@
                 app:layout_constraintTop_toBottomOf="@id/tv_date"
                 android:background="@color/divider"/>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_item"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_180sdp"
-                android:layout_marginTop="@dimen/_6sdp"
-                android:layout_marginStart="@dimen/_14sdp"
-                android:layout_marginEnd="@dimen/_14sdp"
-                app:layout_constraintTop_toBottomOf="@id/divider1"
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/divider1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/title"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto_slab_medium"/>
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_subtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/place"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto_slab_medium"/>
+
+            <TextView
+                android:id="@+id/tv_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_place"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/cost"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto_slab_medium"/>
+
+
+            <TextView
+                android:id="@+id/tv_subtitle_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/divider1"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto_slab_medium"/>
+
+            <TextView
+                android:id="@+id/tv_place_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_subtitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/cost"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto_slab_medium"/>
+
+            <TextView
+                android:id="@+id/tv_cost_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_place_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/cost"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto_slab_medium"/>
 
             <View
                 android:id="@+id/divider2"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_2sdp"
-                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_137sdp"
                 android:layout_marginStart="@dimen/_14sdp"
                 android:layout_marginEnd="@dimen/_14sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rv_item"
+                app:layout_constraintTop_toBottomOf="@id/tv_cost"
                 android:background="@color/divider"/>
 
             <TextView
@@ -123,8 +191,8 @@
                 android:layout_marginStart="@dimen/_14sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/divider2"
-                android:text="@string/total_expenditure_for_this_month"
-                android:textSize="@dimen/_12ssp"
+                android:text="@string/your_expenditure_for_this_month"
+                android:textSize="@dimen/_14ssp"
                 android:fontFamily="@font/roboto_slab_medium"
                 android:maxEms="8"
                 android:textColor="@color/secondary_text"/>
@@ -137,7 +205,7 @@
                 android:layout_marginEnd="@dimen/_14sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/divider2"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="@dimen/_14ssp"
                 android:fontFamily="@font/roboto_slab_medium"
                 android:maxEms="8"
                 android:textColor="@color/black"

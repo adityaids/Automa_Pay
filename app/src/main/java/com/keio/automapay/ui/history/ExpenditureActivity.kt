@@ -21,6 +21,7 @@ class ExpenditureActivity : AppCompatActivity() {
     private lateinit var binding: ActivityExpenditureBinding
     private val expenditureViewModel: ExpenditureViewModel by viewModel()
     private val expenditureAdapter = ExpenditureAdapter()
+    private var total: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +38,18 @@ class ExpenditureActivity : AppCompatActivity() {
             initGraph(it)
             expenditureAdapter.setData(it)
         })
+
+        expenditureAdapter.onItemClick = {
+            toDetail(total, it)
+        }
+    }
+
+    private fun toDetail(total: Int, data: ExpenditureModel) {
+        val intent = Intent(this@ExpenditureActivity, DetailExpenditureActivity::class.java).apply {
+            putExtra(DetailExpenditureActivity.EXTRA_DATA, data)
+            putExtra(DetailExpenditureActivity.EXTRA_TOTAL, total)
+        }
+        startActivity(intent)
     }
 
     private fun initGraph(data: List<ExpenditureModel>){
@@ -46,7 +59,7 @@ class ExpenditureActivity : AppCompatActivity() {
             dataGraph.add(ValueDataEntry(it.name, it.percentage))
         }
         val formater = DecimalFormat("###,###")
-        val total = getSumExpenditure(data)
+        total = getSumExpenditure(data)
         val textTotal = "${resources.getString(R.string.yen)} ${formater.format(total)}"
         val pie = AnyChart.pie()
         pie.background().fill("#001679")

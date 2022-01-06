@@ -6,11 +6,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.keio.automapay.R
 import com.keio.automapay.core.data.domain.model.ExpenditureModel
+import com.keio.automapay.core.data.domain.model.UtilityBillsModel
 import com.keio.automapay.databinding.ItemCardBillsBinding
 
 class ExpenditureAdapter: RecyclerView.Adapter<ExpenditureAdapter.ExpenditureViewHolder>() {
 
     private val listData = ArrayList<ExpenditureModel>()
+    var onItemClick: ((ExpenditureModel) -> Unit)? = null
 
     fun setData(data: List<ExpenditureModel>){
         listData.clear()
@@ -63,5 +65,11 @@ class ExpenditureAdapter: RecyclerView.Adapter<ExpenditureAdapter.ExpenditureVie
                     }
                 }
             }
+
+        init {
+            binding.root.setOnClickListener {
+                onItemClick?.invoke(listData[bindingAdapterPosition])
+            }
+        }
     }
 }
