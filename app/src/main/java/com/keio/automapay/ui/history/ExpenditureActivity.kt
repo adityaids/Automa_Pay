@@ -36,12 +36,7 @@ class ExpenditureActivity : AppCompatActivity() {
         expenditureViewModel.listExpenditure.observe(this,{
             initGraph(it)
             expenditureAdapter.setData(it)
-            initCategoryExpenditure(it)
         })
-    }
-
-    private fun initCategoryExpenditure(data: List<ExpenditureModel>) {
-        val listCategory = filteredByCategory(data)
     }
 
     private fun initGraph(data: List<ExpenditureModel>){

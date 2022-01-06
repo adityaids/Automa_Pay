@@ -10,7 +10,7 @@ data class ExpenditureEntity(
     @NonNull
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    val id: Int,
+    var id: Int?,
 
     @ColumnInfo(name = "name")
     val name: String,
