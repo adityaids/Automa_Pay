@@ -42,6 +42,10 @@ class ExpenditureActivity : AppCompatActivity() {
         expenditureAdapter.onItemClick = {
             toDetail(total, it)
         }
+
+        binding.btnBack.setOnClickListener {
+            finish()
+        }
     }
 
     private fun toDetail(total: Int, data: ExpenditureModel) {
@@ -82,7 +86,7 @@ class ExpenditureActivity : AppCompatActivity() {
     }
 
     private fun toAdd() {
-        binding.pgsBar.visibility = View.VISIBLE
+        binding.pgsBar1.visibility = View.VISIBLE
         val intent = Intent(this@ExpenditureActivity, AddExpenditureActivity::class.java)
         startActivity(intent)
     }
@@ -136,6 +140,6 @@ class ExpenditureActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        binding.pgsBar.visibility = View.GONE
+        binding.pgsBar1.visibility = View.GONE
     }
 }

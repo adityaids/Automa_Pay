@@ -1,5 +1,6 @@
 package com.keio.automapay.ui.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -8,8 +9,9 @@ import com.keio.automapay.core.data.domain.model.BannerModel
 import com.keio.automapay.databinding.ItemBannerBinding
 
 class BannerAdapter: RecyclerView.Adapter<BannerAdapter.BannerViewHolder>() {
-    val listBaner = ArrayList<BannerModel>()
+    private val listBaner = ArrayList<BannerModel>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setData(data: List<BannerModel>){
         listBaner.clear()
         listBaner.addAll(data)

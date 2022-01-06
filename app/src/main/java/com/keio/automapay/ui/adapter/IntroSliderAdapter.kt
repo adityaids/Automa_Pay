@@ -8,7 +8,7 @@ import com.keio.automapay.databinding.ItemCarouselBinding
 import com.smarteist.autoimageslider.SliderViewAdapter
 
 class IntroSliderAdapter: SliderViewAdapter<IntroSliderAdapter.SliderViewHolder>() {
-    val listData = ArrayList<CarouselModel>()
+    private val listData = ArrayList<CarouselModel>()
 
     fun setData(data: List<CarouselModel>){
         listData.clear()

@@ -1,6 +1,7 @@
 package com.keio.automapay.application
 
 import android.app.Application
+import androidx.annotation.Keep
 import com.keio.automapay.di.databaseModul
 import com.keio.automapay.di.repositoryModule
 import com.keio.automapay.di.useCaseModule
@@ -10,6 +11,7 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 
+@Keep
 class MyApplication: Application() {
     override fun onCreate() {
         super.onCreate()

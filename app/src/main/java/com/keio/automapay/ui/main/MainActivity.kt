@@ -1,8 +1,10 @@
 package com.keio.automapay.ui.main
 
+import android.Manifest
 import android.annotation.SuppressLint
 import android.content.DialogInterface
 import android.content.Intent
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.format.Formatter
@@ -10,6 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.marginStart
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,21 +33,22 @@ import java.text.NumberFormat
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
     private val mainViewModel: MainViewModel by viewModel()
+    private var isPermissionGranted = false
 
-    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val bannerAdaper = BannerAdapter()
+        getPermission()
+        val bannerAdapter = BannerAdapter()
         binding.rvPromotion.apply {
-            layoutManager = LinearLayoutManager(context, LinearLayout.HORIZONTAL, false)
-            adapter = bannerAdaper
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             setHasFixedSize(true)
+            adapter = bannerAdapter
         }
         val listBanner = DummyData.getBanner(this)
-        bannerAdaper.setData(listBanner)
+        bannerAdapter.setData(listBanner)
 
         mainViewModel.insertAllExpenditure()
         mainViewModel.listExpenditure.observe(this, { dataList ->
@@ -76,12 +80,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 binding.pgsBar.visibility = View.VISIBLE
             }
             R.id.btn_payment -> {
-                toScan()
-                binding.pgsBar.visibility = View.VISIBLE
+                if (isPermissionGranted) {
+                    toScan()
+                    binding.pgsBar.visibility = View.VISIBLE
+                }else{
+                    Toast.makeText(this, "please allow permission", Toast.LENGTH_LONG).show()
+                    getPermission()
+                }
             }
             R.id.btn_scan -> {
-                toScan()
-                binding.pgsBar.visibility = View.VISIBLE
+                if (isPermissionGranted) {
+                    toScan()
+                    binding.pgsBar.visibility = View.VISIBLE
+                }else{
+                    Toast.makeText(this, "please allow permission", Toast.LENGTH_LONG).show()
+                    getPermission()
+                }
             }
         }
     }
@@ -124,5 +138,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onResume() {
         super.onResume()
         binding.pgsBar.visibility = View.GONE
+    }
+
+    private fun getPermission(){
+        val permission: Array<String> = arrayOf(Manifest.permission.CAMERA)
+        requestPermissions(permission, 404)
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            isPermissionGranted = true
+        } else {
+            Toast.makeText(this, "You need to accept permission", Toast.LENGTH_LONG).show()
+        }
     }
 }

@@ -1,5 +1,6 @@
 package com.keio.automapay.ui.history
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -67,23 +68,30 @@ class AddExpenditureActivity : AppCompatActivity() {
     }
 
     private fun validateInput() :Boolean {
-        if (binding.edtTitle.text.isNullOrBlank()) {
-            binding.edtTitle.error = "This field can't be empty"
-            return false
-        } else if (binding.menuCategory.text.isNullOrBlank()) {
-            Toast.makeText(this, "You haven't choose category", Toast.LENGTH_LONG).show()
-            return false
-        } else if (binding.edtPlace.text.isNullOrBlank()) {
-            binding.edtPlace.error = "This field can't be empty"
-            return false
-        } else if (binding.edtCost.text.isNullOrBlank()) {
-            binding.edtCost.error = "This field can't be empty"
-            return false
-        } else if (binding.edtCalendar.text.isNullOrBlank()) {
-            Toast.makeText(this, "You haven't select date", Toast.LENGTH_LONG).show()
-            return false
-        } else {
-            return true
+        when {
+            binding.edtTitle.text.isNullOrBlank() -> {
+                binding.edtTitle.error = "This field can't be empty"
+                return false
+            }
+            binding.menuCategory.text.isNullOrBlank() -> {
+                Toast.makeText(this, "You haven't choose category", Toast.LENGTH_LONG).show()
+                return false
+            }
+            binding.edtPlace.text.isNullOrBlank() -> {
+                binding.edtPlace.error = "This field can't be empty"
+                return false
+            }
+            binding.edtCost.text.isNullOrBlank() -> {
+                binding.edtCost.error = "This field can't be empty"
+                return false
+            }
+            binding.edtCalendar.text.isNullOrBlank() -> {
+                Toast.makeText(this, "You haven't select date", Toast.LENGTH_LONG).show()
+                return false
+            }
+            else -> {
+                return true
+            }
         }
     }
 
@@ -98,6 +106,7 @@ class AddExpenditureActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("SimpleDateFormat")
     private fun showCalendar(){
         val datePicker = MaterialDatePicker.Builder
             .datePicker()

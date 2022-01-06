@@ -1,7 +1,6 @@
 package com.keio.automapay.core.data.domain.repository
 
 import com.keio.automapay.core.data.domain.model.ExpenditureModel
-import com.keio.automapay.core.data.source.local.entity.ExpenditureEntity
 import kotlinx.coroutines.flow.Flow
 
 interface IAutomaRepository {

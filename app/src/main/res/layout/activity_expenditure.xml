@@ -115,7 +115,7 @@
         app:srcCompat="@drawable/ic_baseline_add"/>
 
     <ProgressBar
-        android:id="@+id/pgs_bar"
+        android:id="@+id/pgs_bar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

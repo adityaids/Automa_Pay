@@ -20,7 +20,6 @@ class DetailUtilityActivity : AppCompatActivity() {
         const val EXTRA_UTILITY = "utility"
     }
     private lateinit var binding: ActivityDetailUtilityBinding
-    private var enteredSaldo: Int = 0
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {

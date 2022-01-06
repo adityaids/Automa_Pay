@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="@dimen/_293sdp"
     android:layout_height="@dimen/_185sdp"
-    xmlns:tools="http://schemas.android.com/tools"
     android:backgroundTint="@color/primary_dark"
     app:cardCornerRadius="@dimen/_16sdp">
 

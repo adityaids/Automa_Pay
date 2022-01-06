@@ -1,5 +1,6 @@
 package com.keio.automapay.ui.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -14,6 +15,7 @@ class ExpenditureAdapter: RecyclerView.Adapter<ExpenditureAdapter.ExpenditureVie
     private val listData = ArrayList<ExpenditureModel>()
     var onItemClick: ((ExpenditureModel) -> Unit)? = null
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setData(data: List<ExpenditureModel>){
         listData.clear()
         listData.addAll(data)

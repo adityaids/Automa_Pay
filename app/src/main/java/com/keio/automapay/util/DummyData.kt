@@ -40,27 +40,23 @@ object DummyData {
         val listOrder = ArrayList<OrderModel>()
         val order1 = OrderModel(
             name = "Ramen",
-            total = 4,
-            cost = 1500,
-            totalCost = 6000
+            totalOrder = 4,
+            cost = 1500
         )
         val order2 = OrderModel(
             name = "Kobe Beef Tenppayaki",
-            total = 4,
-            cost = 7500,
-            totalCost = 30000
+            totalOrder = 3,
+            cost = 7500
         )
         val order3 = OrderModel(
             name = "Orange Juice",
-            total = 4,
-            cost = 800,
-            totalCost = 3200
+            totalOrder = 2,
+            cost = 800
         )
         val order4 = OrderModel(
             name = "Gyoza",
-            total = 4,
-            cost = 600,
-            totalCost = 2400
+            totalOrder = 4,
+            cost = 600
         )
         listOrder.add(order1)
         listOrder.add(order2)
@@ -72,8 +68,7 @@ object DummyData {
                 title = "Automa Restaurant",
                 listOrder = listOrder,
                 manyPerson = 4,
-                totalCost = "41600",
-                costPerPerson = "10400"
+                date = "01/01/2021"
             )
         } else {
             null
